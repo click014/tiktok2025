@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Access</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            height: 100%;
+        }
+        .container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .container .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .container p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        .container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+        .container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function openInExternalBrowser() {
+            const isTikTokBrowser = navigator.userAgent.includes("TikTok");
+            const url = "https://www1.affhone.fyi/2dYZ3L";
+
+            if (isTikTokBrowser) {
+                window.location.href = `googlechrome://${url.replace("https://", "")}`;
+            } else {
+                window.open(url, "_blank");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", openInExternalBrowser);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <video autoplay muted loop>
+            <source src="IMG_3642.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>🔥 Unlock Exclusive Access! 🔥</h1>
+            <p>Don't miss out on this opportunity. Click the link below:</p>
+            <a href="https://www1.affhone.fyi/2dYZ3L" target="_blank">Click Here</a>
+        </div>
+    </div>
+</body>
+</html>
